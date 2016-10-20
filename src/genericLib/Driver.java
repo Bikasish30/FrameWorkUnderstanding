@@ -14,7 +14,7 @@ public class Driver {
 	public static void OpenBrowser() {
 		System.setProperty("webdriver.chrome.driver", chromeDriver);
 		dvr = new ChromeDriver();
-		dvr.manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
+		dvr.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
 		dvr.manage().window().maximize();
 	}
 
