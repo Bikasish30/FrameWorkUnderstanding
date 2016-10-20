@@ -14,7 +14,7 @@ public class TestDataReader {
 	private DataFormatter df;
 	private Sheet sheet;
 
-	String url = "Z:\\Eclipse Neon 11-08-2016\\EclipseNeonWorkSpace\\LoginApp\\TestData\\ImmidartTestData.xlsx";
+	String url = "Z:\\FrameWorkUnderstanding\\LoginApp\\TestData\\ImmidartTestData.xlsx";
 
 	public int getTotalNumberOfRows(String urlPath, String sheetName) throws IOException {
 		fis = new FileInputStream(urlPath);
