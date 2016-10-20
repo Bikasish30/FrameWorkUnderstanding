@@ -6,22 +6,22 @@ import org.openqa.selenium.support.PageFactory;
 
 import applicationPageFactory.LoginPage;
 import genericLib.Driver;
+import genericLib.PropertyInterface;
 import genericLib.TestDataReader;
 
-public class LoginToApplication {
+public class LoginToApplication implements PropertyInterface {
 
 	LoginPage lpObj;
 	TestDataReader tdReader;
-
-	private String testDataFilePath = "Z:\\FrameWorkUnderstanding\\LoginApp\\TestData\\ImmidartTestData.xlsx";
-	private String loginTestDataSheetName = "LoginTestData";
 
 	public void loginToApplication() throws IOException {
 		lpObj = PageFactory.initElements(Driver.dvr, LoginPage.class);
 		tdReader = new TestDataReader();
 
-		lpObj.enterValueInUnerNameField(tdReader.getData(testDataFilePath, loginTestDataSheetName, 1, 0));
-		lpObj.enterValueInPasswordField(tdReader.getData(testDataFilePath, loginTestDataSheetName, 1, 1));
+		lpObj.enterValueInUnerNameField(
+				tdReader.getData(PropertyInterface.testDataFilePath, PropertyInterface.loginTestDataSheetName, 1, 0));
+		lpObj.enterValueInPasswordField(
+				tdReader.getData(PropertyInterface.testDataFilePath, PropertyInterface.loginTestDataSheetName, 1, 1));
 		lpObj.clickOnLoginButton();
 	}
 }
