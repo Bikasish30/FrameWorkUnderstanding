@@ -2,12 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7538" started-at="2016-10-20T04:31:50Z" finished-at="2016-10-20T04:31:57Z">
+  <suite name="Default suite" duration-ms="11861" started-at="2016-10-20T05:10:55Z" finished-at="2016-10-20T05:11:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7538" started-at="2016-10-20T04:31:50Z" finished-at="2016-10-20T04:31:57Z">
+    <test name="Default test" duration-ms="11861" started-at="2016-10-20T05:10:55Z" finished-at="2016-10-20T05:11:07Z">
       <class name="applicationTest.LoginAppTest">
-        <test-method status="PASS" signature="loginToAppTest()[pri:0, instance:applicationTest.LoginAppTest@ae45eb6]" name="loginToAppTest" duration-ms="7499" started-at="2016-10-20T04:31:50Z" finished-at="2016-10-20T04:31:57Z">
+        <test-method status="PASS" signature="beforeTestMethod()[pri:0, instance:applicationTest.LoginAppTest@42d80b78]" name="beforeTestMethod" is-config="true" duration-ms="8037" started-at="2016-10-20T05:10:55Z" finished-at="2016-10-20T05:11:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestMethod -->
+        <test-method status="PASS" signature="loginToAppTest()[pri:0, instance:applicationTest.LoginAppTest@42d80b78]" name="loginToAppTest" duration-ms="3787" started-at="2016-10-20T05:11:03Z" finished-at="2016-10-20T05:11:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppTest -->

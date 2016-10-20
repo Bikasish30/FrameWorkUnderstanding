@@ -5,6 +5,7 @@
     <classes>
       <class name="applicationTest.LoginAppTest">
         <methods>
+          <include name="beforeTestMethod"/>
           <include name="loginToAppTest"/>
         </methods>
       </class> <!-- applicationTest.LoginAppTest -->

@@ -5,13 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage {
 
-	@FindBy(id="EmailID")
+	@FindBy(id="txtUserId")
 	private WebElement emailIDField;
 	
-	@FindBy(id="Password")
+	@FindBy(id="txtPassword")
 	private WebElement passwordField;
 	
-	@FindBy(id="btnSubmit")
+	@FindBy(id="btnLogin")
 	private WebElement btnSubmit;
 	
 	public void enterValueInUnerNameField(String userNmame){
