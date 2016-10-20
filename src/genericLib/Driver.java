@@ -9,10 +9,10 @@ public class Driver {
 
 	public static WebDriver dvr;
 
-	String applicationUrl = "Z:\\FrameWorkUnderstanding\\LoginApp\\resources\\chromedriver.exe";
+	private static String chromeDriver = "Z:\\FrameWorkUnderstanding\\LoginApp\\resources\\chromedriver.exe";
 
 	public static void OpenBrowser() {
-		System.setProperty("webdriver.chrome.driver", "applicationUrl");
+		System.setProperty("webdriver.chrome.driver", chromeDriver);
 		dvr = new ChromeDriver();
 		dvr.manage().timeouts().implicitlyWait(4000, TimeUnit.SECONDS);
 		dvr.manage().window().maximize();

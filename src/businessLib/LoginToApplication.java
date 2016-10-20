@@ -13,7 +13,7 @@ public class LoginToApplication {
 	LoginPage lpObj;
 	TestDataReader tdReader;
 
-	private String testDataFilePath = "Z:\\Eclipse Neon 11-08-2016\\EclipseNeonWorkSpace\\LoginApp\\TestData\\ImmidartTestData.xlsx";
+	private String testDataFilePath = "Z:\\FrameWorkUnderstanding\\LoginApp\\TestData\\ImmidartTestData.xlsx";
 	private String loginTestDataSheetName = "LoginTestData";
 
 	public void loginToApplication() throws IOException {
