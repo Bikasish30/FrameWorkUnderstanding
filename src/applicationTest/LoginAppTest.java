@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import businessLib.AddFinanceTracker;
 import businessLib.LoginToApplication;
 import genericLib.ApplicationGenericMethods;
 import genericLib.Driver;
@@ -13,7 +14,8 @@ public class LoginAppTest {
 
 	ApplicationGenericMethods openApplicationBLObject;
 	LoginToApplication loginToApplicationBLObject;
-
+	AddFinanceTracker addFinanceTrackerObject;
+	
 	@BeforeTest
 	public void beforeTestMethod() {
 		Driver.OpenBrowser();
@@ -27,5 +29,7 @@ public class LoginAppTest {
 		openApplicationBLObject.openApplication();
 		loginToApplicationBLObject.loginToApplication();
 
+		addFinanceTrackerObject = new AddFinanceTracker();
+		addFinanceTrackerObject.addFinanceTracker();
 	}
 }
