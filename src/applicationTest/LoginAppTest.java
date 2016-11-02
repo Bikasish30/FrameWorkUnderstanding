@@ -1,12 +1,11 @@
 package applicationTest;
 
-import java.io.IOException;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import businessLib.AddFinanceTracker;
 import businessLib.LoginToApplication;
+import businessLib.TestFinance;
 import genericLib.ApplicationGenericMethods;
 import genericLib.Driver;
 
@@ -24,12 +23,15 @@ public class LoginAppTest {
 	}
 
 	@Test
-	public void loginToAppTest() throws IOException {
+	public void loginToAppTest() throws Exception {
 		loginToApplicationBLObject = new LoginToApplication();
 		openApplicationBLObject.openApplication();
 		loginToApplicationBLObject.loginToApplication();
 
-		addFinanceTrackerObject = new AddFinanceTracker();
-		addFinanceTrackerObject.addFinanceTracker();
+		//addFinanceTrackerObject = new AddFinanceTracker();
+		//addFinanceTrackerObject.addFinanceTracker();
+		
+		TestFinance obj = new TestFinance();
+		obj.testFinance();	
 	}
 }
