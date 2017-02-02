@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18485" started-at="2017-01-16T06:33:25Z" finished-at="2017-01-16T06:33:44Z">
+  <suite name="Default suite" duration-ms="1489" started-at="2017-02-02T07:09:39Z" finished-at="2017-02-02T07:09:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18485" started-at="2017-01-16T06:33:25Z" finished-at="2017-01-16T06:33:44Z">
-      <class name="applicationTest.FrameTest">
-        <test-method status="PASS" signature="frameTestMethod()[pri:0, instance:applicationTest.FrameTest@42d80b78]" name="frameTestMethod" duration-ms="18415" started-at="2017-01-16T12:03:25Z" finished-at="2017-01-16T12:03:44Z">
+    <test name="Default test" duration-ms="1489" started-at="2017-02-02T07:09:39Z" finished-at="2017-02-02T07:09:41Z">
+      <class name="dataProviderCheck.DataTestFromExcel">
+        <test-method status="PASS" signature="countryAssisTest(java.lang.String, java.lang.String)[pri:0, instance:dataProviderCheck.DataTestFromExcel@66a3ffec]" name="countryAssisTest" duration-ms="16" started-at="2017-02-02T12:39:41Z" data-provider="CountryAssignmentRole" finished-at="2017-02-02T12:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[United States]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Programmer Analyst,System Analyst,Computer Programmer]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- frameTestMethod -->
-      </class> <!-- applicationTest.FrameTest -->
+        </test-method> <!-- countryAssisTest -->
+        <test-method status="PASS" signature="countryAssisTest(java.lang.String, java.lang.String)[pri:0, instance:dataProviderCheck.DataTestFromExcel@66a3ffec]" name="countryAssisTest" duration-ms="0" started-at="2017-02-02T12:39:41Z" data-provider="CountryAssignmentRole" finished-at="2017-02-02T12:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Australia]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[System Analyst,Lead Administrator,System Analyst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countryAssisTest -->
+        <test-method status="PASS" signature="countryAssisTest(java.lang.String, java.lang.String)[pri:0, instance:dataProviderCheck.DataTestFromExcel@66a3ffec]" name="countryAssisTest" duration-ms="1" started-at="2017-02-02T12:39:41Z" data-provider="CountryAssignmentRole" finished-at="2017-02-02T12:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[canada]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Computer Programmer,Product Manager]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countryAssisTest -->
+        <test-method status="PASS" signature="countryAssisTest(java.lang.String, java.lang.String)[pri:0, instance:dataProviderCheck.DataTestFromExcel@66a3ffec]" name="countryAssisTest" duration-ms="1" started-at="2017-02-02T12:39:41Z" data-provider="CountryAssignmentRole" finished-at="2017-02-02T12:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Germany]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Software Developer,Business Analyst,Programmer Analyst]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- countryAssisTest -->
+      </class> <!-- dataProviderCheck.DataTestFromExcel -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
